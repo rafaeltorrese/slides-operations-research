@@ -13,5 +13,5 @@ author: "Rafael Torres-Escobar"
 preview: true
 watch: false
 server: false
-theme: "style.css"
+theme: "slides.css"
 math: mathjx
