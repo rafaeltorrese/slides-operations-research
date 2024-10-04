@@ -30,7 +30,7 @@ main.pdf
 example*.xlsx
 example*.xls
 env
-.env
+.ev
 # For Mac
 .DS_Store
 
@@ -49,3 +49,6 @@ test.py
 *.ppt*
 *.xls*
 input.tex
+
+*.bat
+*.exe
