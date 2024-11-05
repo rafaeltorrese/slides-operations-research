@@ -52,3 +52,7 @@ input.tex
 
 *.bat
 *.exe
+
+*.png
+*.jpg
+*.jpeg
