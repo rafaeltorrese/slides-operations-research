@@ -1,0 +1,35 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Define Agent Nodes -->
+    <circle cx="100" cy="100" r="20" fill="#4CAF50"/>
+    <circle cx="100" cy="200" r="20" fill="#4CAF50"/>
+    <circle cx="100" cy="300" r="20" fill="#4CAF50"/>
+    <!-- Define Task Nodes -->
+    <circle cx="500" cy="100" r="20" fill="#FF5722"/>
+    <circle cx="500" cy="200" r="20" fill="#FF5722"/>
+    <circle cx="500" cy="300" r="20" fill="#FF5722"/>
+    
+    <!-- Labels for Agent Nodes -->
+    <text x="100" y="100" text-anchor="middle" dy=".3em" fill="#ffffff">A1</text>
+    <text x="100" y="200" text-anchor="middle" dy=".3em" fill="#ffffff">A2</text>
+    <text x="100" y="300" text-anchor="middle" dy=".3em" fill="#ffffff">A3</text>
+    
+    <!-- Labels for Task Nodes -->
+    <text x="500" y="100" text-anchor="middle" dy=".3em" fill="#ffffff">T1</text>
+    <text x="500" y="200" text-anchor="middle" dy=".3em" fill="#ffffff">T2</text>
+    <text x="500" y="300" text-anchor="middle" dy=".3em" fill="#ffffff">T3</text>
+    
+    <!-- Assignment Arrows -->
+    <line x1="120" y1="100" x2="480" y2="100" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="120" y1="100" x2="480" y2="200" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="120" y1="200" x2="480" y2="100" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="120" y1="200" x2="480" y2="300" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="120" y1="300" x2="480" y2="200" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="120" y1="300" x2="480" y2="300" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Define Arrow Marker -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="black"/>
+        </marker>
+    </defs>
+</svg>
