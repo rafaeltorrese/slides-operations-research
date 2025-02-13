@@ -1,0 +1,63 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+ <!-- Background -->
+  <rect width="100%" height="100%" fill="#f5f5f5"/>
+
+  <!-- Nodes (Origins) -->
+  <circle cx="100" cy="100" r="40" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+  <text x="100" y="105" font-size="12" text-anchor="middle" fill="white">Plant 01</text>
+
+  <circle cx="100" cy="400" r="40" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+  <text x="100" y="405" font-size="12" text-anchor="middle" fill="white">Plant 02</text>
+
+  <circle cx="100" cy="700" r="40" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+  <text x="100" y="705" font-size="12" text-anchor="middle" fill="white">Plant 03</text>
+
+  <!-- Nodes (Transshipments) -->
+  <circle cx="400" cy="180" r="40" fill="#FF1800" stroke="#F57C00" stroke-width="2"/>
+  <text x="400" y="185" font-size="12" text-anchor="middle" fill="white">Warehouse 01</text>
+
+  <circle cx="400" cy="620" r="40" fill="#FF1800" stroke="#F57C00" stroke-width="2"/>
+  <text x="400" y="625" font-size="12" text-anchor="middle" fill="white">Warehouse 02</text>
+
+  <!-- Nodes (Destinations) -->
+  <circle cx="700" cy="50" r="40" fill="#FF9800" stroke="#F57C00" stroke-width="2"/>
+  <text x="700" y="55" font-size="12" text-anchor="middle" fill="white">Customer 01</text>
+
+  <circle cx="700" cy="283" r="40" fill="#FF9800" stroke="#F57C00" stroke-width="2"/>
+  <text x="700" y="288" font-size="12" text-anchor="middle" fill="white">Customer 02</text>
+
+  <circle cx="700" cy="516" r="40" fill="#FF9800" stroke="#F57C00" stroke-width="2"/>
+  <text x="700" y="521" font-size="12" text-anchor="middle" fill="white">Customer 03</text>
+
+  <circle cx="700" cy="750" r="40" fill="#FF9800" stroke="#F57C00" stroke-width="2"/>
+  <text x="700" y="755" font-size="12" text-anchor="middle" fill="white">Customer 04</text>
+
+  
+
+  <!-- Arrows and Costs -->
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <line x1="140" y1="100" x2="360" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="140" y1="100" x2="360" y2="620" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="140" y1="400" x2="360" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="140" y1="400" x2="360" y2="620" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <line x1="140" y1="700" x2="360" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="140" y1="700" x2="360" y2="620" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="440" y1="180" x2="660" y2="50" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="180" x2="660" y2="283" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="180" x2="660" y2="516" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="180" x2="660" y2="750" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+
+  <line x1="440" y1="620" x2="660" y2="50" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="620" x2="660" y2="283" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="620" x2="660" y2="516" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="620" x2="660" y2="750" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

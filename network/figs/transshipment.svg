@@ -1,0 +1,41 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Supply Nodes -->
+    <circle cx="100" cy="100" r="20" fill="#4CAF50"/>
+    <text x="100" y="100" text-anchor="middle" dy=".3em" fill="#ffffff">S1</text>
+    
+    <circle cx="100" cy="300" r="20" fill="#4CAF50"/>
+    <text x="100" y="300" text-anchor="middle" dy=".3em" fill="#ffffff">S2</text>
+    
+    <!-- Transshipment Nodes -->
+    <circle cx="300" cy="150" r="20" fill="#FFC107"/>
+    <text x="300" y="150" text-anchor="middle" dy=".3em" fill="#ffffff">T1</text>
+    
+    <circle cx="300" cy="250" r="20" fill="#FFC107"/>
+    <text x="300" y="250" text-anchor="middle" dy=".3em" fill="#ffffff">T2</text>
+    
+    <!-- Demand Nodes -->
+    <circle cx="500" cy="100" r="20" fill="#FF5722"/>
+    <text x="500" y="100" text-anchor="middle" dy=".3em" fill="#ffffff">D1</text>
+    
+    <circle cx="500" cy="300" r="20" fill="#FF5722"/>
+    <text x="500" y="300" text-anchor="middle" dy=".3em" fill="#ffffff">D2</text>
+    
+    <!-- Arrows from Supply to Transshipment Nodes -->
+    <line x1="120" y1="100" x2="280" y2="150" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="120" y1="300" x2="280" y2="250" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Arrows between Transshipment Nodes -->
+    <line x1="320" y1="150" x2="280" y2="250" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="280" y1="250" x2="320" y2="150" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Arrows from Transshipment to Demand Nodes -->
+    <line x1="320" y1="150" x2="480" y2="100" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="320" y1="250" x2="480" y2="300" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Define Arrow Marker -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="black"/>
+        </marker>
+    </defs>
+</svg>
